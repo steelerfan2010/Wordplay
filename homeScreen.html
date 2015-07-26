@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Home</title>
+		<style>
+		body {
+			background-color: blue;
+		}
+	
+		</style>
+	</head>
+	<body>
+	<h1> Welcome to Wordplay </h1>
+	<p> Created by: Will Livesey and Alex Bryan</p>
+	<input type=button onClick="location.href='Wordplay.html'" value='Click to play the game'>
+	<br>
+	<br>
+	<p> New updates: Improved scoring system, shows last word made </p>
+	<p> Also: I'm aware about the laptop screen size issue and the floating tile bug </p>
+	<script>
+		window.fbAsyncInit = function() {
+			FB.init({
+				appID	: '941092659264797'
+				xfbml	: true,
+				version : 'v2.1'	
+			});
+		};
+
+		(function(d, s, id){
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if(d.getElementsById(id)) { return;}
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js";
+			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	</body>
+</html>
+

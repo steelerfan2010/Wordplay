@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Wordplay</title>
+		<style>
+		body {
+			background-color: black;
+		}
+		div#board {
+			position: relative;
+			width: 1024px;
+			height: 641px;
+			margin: auto;
+			background: url("Grid2.png") no-repeat;
+		}
+		
+		div#message {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			color: rgb(83,175,19);
+		}
+
+		div#message2 {
+			position: absolute;
+			top: 20px;
+			left: 0px;
+			color: rgb(83,175,19);
+		}
+
+		div#message3 {
+			position: absolute;
+			top: 40px;
+			left: 0px;
+			color: rgb(83,175,19);
+		}
+
+		div#message4 {
+			position: absolute;
+			top: 60px;
+			left: 0px;
+			color: rgb(83,175,19);
+		}
+		
+		.table1 {
+			position: absolute;
+			left: 223px;
+			top: 64px;
+			border-spacing: 0px;
+		}
+
+		.table2 {
+			position: absolute;
+			left: 64px;
+			top: 288px;
+			border-spacing: 0px;
+		}
+		
+		td {
+			width: 30px;
+			height: 30px;
+		}
+		
+		.letterA {
+			background: url("Letter Images/A.png") no-repeat center center;
+		}
+		.letterB {
+			background: url("Letter Images/B.png") no-repeat center center;
+		}
+		.letterC {
+			background: url("Letter Images/C.png") no-repeat center center;
+		}
+		.letterD {
+			background: url("Letter Images/D.png") no-repeat center center;
+		}
+		.letterE {
+			background: url("Letter Images/E.png") no-repeat center center;
+		}
+		.letterF {
+			background: url("Letter Images/F.png") no-repeat center center;
+		}
+		.letterG {
+			background: url("Letter Images/G.png") no-repeat center center;
+		}
+		.letterH {
+			background: url("Letter Images/H.png") no-repeat center center;
+		}
+		.letterI {
+			background: url("Letter Images/I.png") no-repeat center center;
+		}
+		.letterJ {
+			background: url("Letter Images/J.png") no-repeat center center;
+		}
+		.letterK {
+			background: url("Letter Images/K.png") no-repeat center center;
+		}
+		.letterL {
+			background: url("Letter Images/L.png") no-repeat center center;
+		}
+		.letterM {
+			background: url("Letter Images/M.png") no-repeat center center;
+		}
+		.letterN {
+			background: url("Letter Images/N.png") no-repeat center center;
+		}
+		.letterO {
+			background: url("Letter Images/O.png") no-repeat center center;
+		}
+		.letterP {
+			background: url("Letter Images/P.png") no-repeat center center;
+		}
+		.letterQ {
+			background: url("Letter Images/Q.png") no-repeat center center;
+		}
+		.letterR {
+			background: url("Letter Images/R.png") no-repeat center center;
+		}
+		.letterS {
+			background: url("Letter Images/S.png") no-repeat center center;
+		}
+		.letterT {
+			background: url("Letter Images/T.png") no-repeat center center;
+		}
+		.letterU {
+			background: url("Letter Images/U.png") no-repeat center center;
+		}
+		.letterV {
+			background: url("Letter Images/V.png") no-repeat center center;
+		}
+		.letterW {
+			background: url("Letter Images/W.png") no-repeat center center;
+		}
+		.letterX {
+			background: url("Letter Images/X.png") no-repeat center center;
+		}
+		.letterY {
+			background: url("Letter Images/Y.png") no-repeat center center;
+		}
+		.letterZ {
+			background: url("Letter Images/Z.png") no-repeat center center;
+		}
+	
+	
+		</style>
+	</head>
+	<body>
+		<div id="board">
+			<div id="message"></div>
+			<div id="message2"></div>
+			<div id="message3"></div>
+			<div id="message4"></div>
+			
+			<table class ="table2">
+				<tr>
+					<td id =300></td> <td id=301></td> <td id=302></td>
+				</tr>
+			</table>
+
+			<table class ="table1">
+				 <tr>
+					 <td id=0></td> <td id=1></td> <td id=2></td> <td id=3></td> <td id=4></td> <td id=5></td> <td id=6></td>
+				 </tr>
+				 <tr>
+					 <td id=7></td> <td id=8></td> <td id=9></td> <td id=10></td> <td id=11></td> <td id=12></td> <td id=13></td>
+				 </tr>
+				 <tr>
+					 <td id=14></td> <td id=15></td> <td id=16></td> <td id=17></td> <td id=18></td> <td id=19></td> <td id=20></td>
+				 </tr>
+				 <tr>
+					 <td id=21></td> <td id=22></td> <td id=23></td> <td id=24></td> <td id=25></td> <td id=26></td> <td id=27></td>
+				 </tr>
+				 <tr>
+					 <td id=28></td> <td id=29></td> <td id=30></td> <td id=31></td> <td id=32></td> <td id=33></td> <td id=34></td>				 
+				 </tr>
+				 <tr>
+			         <td id=35></td> <td id=36></td> <td id=37></td> <td id=38></td> <td id=39></td> <td id=40></td> <td id=41></td>
+				 </tr>
+				 <tr>
+					 <td id=42></td> <td id=43></td> <td id=44></td> <td id=45></td> <td id=46></td> <td id=47></td> <td id=48></td>
+				 </tr>
+				 <tr>			
+					 <td id=49></td> <td id=50></td> <td id=51></td> <td id=52></td> <td id=53></td> <td id=54></td> <td id=55></td>
+				 </tr>
+				 <tr>
+				 	 <td id=56></td> <td id=57></td> <td id=58></td> <td id=59></td> <td id=60></td> <td id=61></td> <td id=62></td>
+				 </tr>
+				 <tr>	 
+					 <td id=63></td> <td id=64></td> <td id=65></td> <td id=66></td> <td id=67></td> <td id=68></td> <td id=69></td>
+				 </tr>
+				 <tr>	 
+					 <td id=70></td> <td id=71></td> <td id=72></td> <td id=73></td> <td id=74></td> <td id=75></td> <td id=76></td>
+				 </tr>
+				 <tr>	 
+					 <td id=77></td> <td id=78></td> <td id=79></td> <td id=80></td> <td id=81></td> <td id=82></td> <td id=83></td>
+				 </tr>
+				 <tr>	 
+					 <td id=84></td> <td id=85></td> <td id=86></td> <td id=87></td> <td id=88></td> <td id=89></td> <td id=90></td>
+				 </tr>
+				 <tr>	 
+					 <td id=91></td> <td id=92></td> <td id=93></td> <td id=94></td> <td id=95></td> <td id=96></td> <td id=97></td>
+				 </tr>
+				 <tr>	 
+					 <td id=98></td> <td id=99></td> <td id=100></td> <td id=101></td> <td id=102></td> <td id=103></td> <td id=104></td>
+				 </tr>
+				 <tr>	 
+					 <td id=105></td> <td id=106></td> <td id=107></td> <td id=108></td> <td id=109></td> <td id=110></td> <td id=111></td>
+				 </tr>
+				 <tr>	 
+					 <td id=112></td> <td id=113></td> <td id=114></td> <td id=115></td> <td id=116></td> <td id=117></td> <td id=118></td>
+				 </tr>
+				 <tr>	 
+					 <td id=119></td> <td id=120></td> <td id=121></td> <td id=122></td> <td id=123></td> <td id=124></td> <td id=125></td>
+				 </tr>
+			</table>
+		</div>
+		<script src="gameplayScripts/view.js"></script>
+		<script src="gameplayScripts/letterValues.js"></script>
+		<script src="gameplayScripts/score.js"></script>
+		<script src="gameplayScripts/hashset.js"></script>	
+		<script src="gameplayScripts/wordCheck.js"></script>
+		<script src="gameplayScripts/keyboard.js"></script>
+		<script src="gameplayScripts/gameLoop.js"></script>
+	</body>
+</html>
+
